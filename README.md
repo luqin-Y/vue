@@ -22,8 +22,10 @@ npm run build --report
 
 
 + 模拟数据交互
- - 依赖:http-proxy-middleware
- - 在config/index.js  中配置proxtTable中配置
+
+  - 依赖:http-proxy-middleware
+
+  - 在config/index.js  中配置proxtTable中配置
   ```
   ｛
     '/api':{
@@ -37,12 +39,16 @@ npm run build --report
   ```
 + 使用mock.   (并不依赖于第三方插件)
   - 项目中创建mock文件夹，
+
   - build/dev-server.js中添加
+
     ```
     app.use('/mock',express.status('./mock'))
     ```
- - npm run dev
- - 访问127.0.0.1:9001/mock/db.json
+
+  - npm run dev
+
+  - 访问127.0.0.1:9001/mock/db.json
 
 + 使用Sass
   - 依赖    sass-loader   node-sass
