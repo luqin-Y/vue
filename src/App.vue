@@ -5,8 +5,8 @@
       <span class="wrapper">
         <el-button type="success" v-model='router1' v-on:click='btn1'>{{ router1 }}</el-button>
         <el-button type="warning" v-model='router2' v-on:click='btn2'>{{ router2 }}</el-button>
-        <el-button type="danger" v-model='router3'>{{ router3 }}</el-button>
-        <el-button type="info" v-model='router4'>{{ router4 }}</el-button>
+        <el-button type="danger"  v-model='router3' v-on:click='btn3'>{{ router3 }}</el-button>
+        <el-button type="info"    v-model='router4'>{{ router4 }}</el-button>
       </span>
     </div>
     <router-view></router-view>
@@ -32,6 +32,9 @@ export default {
     },
     btn2: function (evt) {
       this.$router.push({path: '/'})
+    },
+    btn3: function (evt) {
+      this.$router.push({path: '/m2'})
     },
   }
 }

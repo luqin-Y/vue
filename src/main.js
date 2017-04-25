@@ -4,13 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'element-ui/lib/theme-default/index.css'
-import {Button, Alert} from 'element-ui'
+import {Button, Alert,Input} from 'element-ui'
 import axios from 'axios'
 import VueRouter from 'vue-router'
+import store from './store'
 
 Vue.config.productionTip = false
 Vue.use(Button)
 Vue.use(Alert)
+Vue.use(Input)
 Vue.use(VueRouter)
 Vue.prototype.$axios = axios
 
@@ -22,6 +24,7 @@ const routers=new VueRouter({
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App },
 })

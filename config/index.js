@@ -23,13 +23,13 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 9002,
+    port: 9003,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
       '/api':{
-        target:'127.0.0.1:9001/mock',
+        target:'127.0.0.1:9003/mock',
         chengeOrigin:true,
         pathRewrite:{
           '^/mock':'mock'

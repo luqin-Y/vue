@@ -1,4 +1,4 @@
-# vue-t  vue-cli webpack demo
+# vue-t  vue-cli webpack demo   9003
 
 > A Vue.js project
 
@@ -104,5 +104,24 @@ npm run build --report
   })
 ```
   - 注册路由 router/index.js
+
+
+
+
++ vuex
+  - 依赖：npm i vuex
+
+  - src下面新建store /index.js
+  - state: 可以理解为是原始数据结构
+  - mutations:同步的：  更改 Vuex 的 store 中的状态的唯一方法是提交 mutations
+  - actions:是异步的
+
+  - 使用：
+
+  - 获取：this.$store.state.count
+  - 提交：this.$store.commit('add',可以带参数) add为mutations定义的函数
+
+
+
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
